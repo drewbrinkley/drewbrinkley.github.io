@@ -3,8 +3,10 @@ title: Drew Brinkley
 author:
   name: Drew Brinkley
   email: drewbrinkley24@gmail.com
-  linkedin: drew-brinkley-25a682149
 description: "Drew Brinkley's personal website on GH-pages."
 
 # Build settings
 remote_theme: jekyll/minima
+
+# Footer links
+linkedin: drew-brinkley-25a682149
