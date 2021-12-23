@@ -1,0 +1,9 @@
+# Site settings
+title: Drew Brinkley
+author:
+  name: Drew Brinkley
+  email: drewbrinkley24@gmail.com
+description: "Drew Brinkley's personal website on GH-pages."
+
+# Build settings
+remote_theme: jekyll/minima
