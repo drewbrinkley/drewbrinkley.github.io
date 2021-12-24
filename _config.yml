@@ -5,10 +5,10 @@ author:
   email: drewbrinkley24@gmail.com
 description: "Drew Brinkley's personal website on GH-pages."
 
-# Build settings
-remote_theme: jekyll/minima
-
 # generate social links in footer
 social_links:
   linkedin: drew-brinkley-25a682149
   github: drewbrinkley
+
+# Build settings
+remote_theme: jekyll/minima
