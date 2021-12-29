@@ -2,7 +2,9 @@
 layout: page
 title: About
 ---
-![**Hi, I'm Drew.**]{/images/profile.jpg)
+![](/images/profile.jpg)
+
+#### Hi, I'm Drew.
 
 I spent the past 19 years working in the public sector at the state and local government levels.  A recent relocation from Arkansas to the Philadelphia area brought about an opportunity to reflect upon my career.  I am seeking to combine my strengths and interests from my prior positions with new skills learned through earning the Google Data Analytics Professional Certificate to transition into a career in data analytics.
 
