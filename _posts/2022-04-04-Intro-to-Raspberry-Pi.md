@@ -11,6 +11,7 @@ Quite simply, a Raspberry Pi is a single-board computer that fits inside the pal
 * Built-in wireless and Bluetooth connectivity
 * Choice of 1 GB, 2 GB, 4 GB, or 8 GB RAM
 * Micro SD card slot
+
 Raspberry Pis can be connected to a monitor(s), keyboard, and mouse and used in the same manner as any other desktop computer.  Alternatively, a Pi can be used in a "headless" configuration, where you connect to the device remotely and interact with it via the command line. In either case, you need to hook up your desired peripherals and connect to a power supply and the internet and you are off and running. Well, mostly - you need to intall the operating system (OS). 
 
 Speaking of the OS, Raspberry Pi runs on the Linux platform.  The official supported OS is called Raspbian, which can be used with a GUI (graphical user interface) that should be intuitive to use for anyone who has been exposed to a machine running Windows or MacOS.  Raspbian can also be installed as a Lite version if you plan to use your device headlessly.  The OS is most typically installed on a micro SD card, which also acts as the device's hard drive.  
