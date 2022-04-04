@@ -1,4 +1,4 @@
-#Into to Raspberry Pi
+#Intro to Raspberry Pi
 In this post, I will introduce an overview of Raspberry Pi and it's standard features, outline some of the benefits of using a Pi, and provide an overview of how I am utlizing these devices.  For more information on Raspberry Pi, feel free to check out the official website of the [Raspberry Pi Foundation](https://www.raspberrypi.org/).
 
 ##What is a Raspberry Pi Exactly?
