@@ -25,8 +25,8 @@ Raspberry Pis offer myriad benefits that could attract users to the platform.  S
 
 ## How am I Using Mine?
 At present, I have a stable of three Raspberry Pis running in my home.  I initially purchased a 8 GB kit to set up a technology learning lab.  The kit included a SD card loaded with NOOBS (New Out of Box Software), which is the most plug-and-play way to set up your Pi for the first time.  The primary use-case for this Pi initially focused on two main purposes:
-- To gain familiarity in interacting with Linux through the command line.  This can be done without fear of doing irreparable harm to the computer; in a worst-case scenario where I manage to seriously break something, all that is required to fix things is to reflash the OS onto the SD card and start over.
-* To learn Python.  NOOBS comes with a text editor and Python IDE (integrated development environment) installed by default.  However, I elected to install Visual Studio Code to use as my preferred editor.
+- _To gain familiarity in interacting with Linux through the command line_.  This can be done without fear of doing irreparable harm to the computer; in a worst-case scenario where I manage to seriously break something, all that is required to fix things is to reflash the OS onto the SD card and start over.
+* _To learn Python_.  NOOBS comes with a text editor and Python IDE (integrated development environment) installed by default.  However, I elected to install Visual Studio Code to use as my preferred editor.
 However, I quickly found that I underestimated the performance of this little computer.  It can easily function as a "primary" personal computer for most of the average person's day-to-day computing needs.  I find myself using it as such when my wife is working from home on our Windows-based laptop.
 
 Raspberry Pi # 2 is set up as a NAS (network-attached storage) Server.  This allows files to be saved from and accessible to all devices connected to my home network.  Stay tuned for a future post on how I set up and configured the NAS.
