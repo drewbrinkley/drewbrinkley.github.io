@@ -33,14 +33,14 @@ There are a wide range of options for configuring Rsync.  I used the following i
 * -e :  remote shell, which allows you to specify which protocol will be used for remote transfers
  
 I entered ```rsync -avue ssh /<local_path>/ <user_name>@<IP_address>:<remote_path>``` to specify that SSH will be used to connect RP1 and RP2.  If you are following this example, replace:
-- <local_path> with the path to the directory on your local client you would like to back up,
-- <user_name> with the account you use to connect to your remote host,
-- <IP_address> with the IP address of your remote host, and
-- <remote_path> with the locaion on your remote host where you would like to store your archived files.
+- ```<local_path>``` with the path to the directory on your local client you would like to back up,
+- ```<user_name>``` with the account you use to connect to your remote host,
+- ```<IP_address>``` with the IP address of your remote host, and
+- ```<remote_path>``` with the locaion on your remote host where you would like to store your archived files.
 The -v flag provided some confirmation that the transfer was completed.  However, I wanted further confirmation so I made a SSH connection into my RP2 NAS, navigated to the archive directory, and used the ```ls``` command to verify that all of my files were there.  Success!
 
 ### Automating the Synchronization
-Now that I had a working Rsync command, the final piece of the puzzle was to automate the file synchornization.  To do that, I used Linux's _cron_ service to create a schedule task for executing Rsync.  The general syntax for a cron job is "* * * * * <command>" - each "* " represents the time components (minute, hour, day of month, month, and day of week) that can be used in the scheduling, and <command> can be replaced with whatever command you desire to run at the scheduled time.
+Now that I had a working Rsync command, the final piece of the puzzle was to automate the file synchornization.  To do that, I used Linux's _cron_ service to create a schedule task for executing Rsync.  The general syntax for a cron job is ```* * * * * <command>``` - each "* " represents the time components (minute, hour, day of month, month, and day of week) that can be used in the scheduling, and ```<command>``` can be replaced with whatever command you desire to run at the scheduled time.
 
 To do create my job, I entered ```crontab -e``` into the Terminal on RP1.  The first time you do so, you will be prompted to select which editor you want to use to make changes to the cron table.  At the bottom of the file, I inserted ```0 2 * * * rsync -avue ssh /<local_path>/ <user_name>@<IP_address>:<remote_path>``` - this will run my Rsync job at 2:00 a.m. daily (the *s will remain as wild cards and will run every date, month, and day of the week since no specific values are entered in those positions).  
 
@@ -51,7 +51,7 @@ As written, my Rsync command was great for transferring new and modified files f
 
 I opened up my cron table and added the _--delete_ flag to my script:  ```0 2 * * * rsync -avue --delete ssh /<local_path>/ <user_name>@<IP_address>:<remote_path>```.  I added a new file named _Test2.md_ and deleted my original test file, _Test.md_ on RP1 so I could check the functionality the next day.
 - __I broke things.__  When I checked in on the status of RP2 the next day, I discovered that things had not gone according to plan.  The original test file, _Test.md_, was still on the NAS even though I had deleted it on RP1.  Also, the new test file, _Test2.md_, had not been copied over.  
-- __Confirming the job ran.__ After a couple days of optimistically checking, I was unable to observe any difference in the NAS's archive directory.  I had also made some real changes to files in RP1, and nothing was syncing with RP2.  I decided to check the log files on RP1 to see if my cron job was running.  I opened up a Terminal window oand navigated to the ```/var/log``` directory, then used ```cat syslog``` to display the system log.  I scrolled back to 2:00 a.m. and verified that my cron Rsync job initiated, but there was a message stating that it failed to execute due to "--delete:  No such file or directory."
+- __Confirming the job ran.__ After a couple days of optimistically checking, I was unable to observe any difference in the NAS's archive directory.  I had also made some real changes to files in RP1, and nothing was syncing with RP2.  I decided to check the log files on RP1 to see if my cron job was running.  I opened up a Terminal window oand navigated to the ```/var/log``` directory, then used ```cat syslog``` to display the contents of the system log file.  I scrolled back to 2:00 a.m. and verified that my cron Rsync job initiated, but there was a message stating that it failed to execute due to "--delete:  No such file or directory."
 - __Fixing the script.__  I hit the internet to research what was wrong with my script.  I realized that the _-e_ flag was expecting to see a protocol for the remote connection, and my command was telling it to use _--delete_ instead of _ssh_ now.  A quick change to the order of my syntax resolved that, and the format of the final command was  ```0 2 * * * rsync -avue ssh --delete /<local_path>/ <user_name>@<IP_address>:<remote_path>```.
 When I checked the status the next day, I confirmed that all the changes (additions, modifications, and deletions) in RP1 were syncing to RP2.  
 
@@ -65,4 +65,5 @@ After completing this project, I had successfully built a local file server on m
 - Generating and deploying SSH keys to authenticate to a remote server
 - Using Rsync to synchronize file storage between two devices
 - Creating a script to automate the file sharing process
+
 I also had to perform some troubleshooting when my work produced some unexpected results.  This provided a great opportunity to get some experience with some activities that have usage in networking and systems administration activities in an enterprise environment (albeit, on a different scale).  I learned a lot in this project, and I would encourage you to try it out if you have a spare Raspberry Pi and a couple of extra drives.
