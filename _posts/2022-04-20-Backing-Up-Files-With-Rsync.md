@@ -10,7 +10,7 @@ It is simple enough to use the standard ways to drag-and-drop or copy-paste file
 ### Connecting Pis with SSH
 Since my NAS is running on RP2 that is in headless mode (it does not have an attached display, keyboard, or mouse), I have to establish a remote connection to the Pi from another device in order to perform any tasks or configurations.  The standard way to do this is to use SSH (secure shell).  
 
-In order to establish the remote connection, I hop in to the Terminal of RP1 and enter ```ssh <user_name>@<IP_address>``` (you will replace <user_name> with the account you have on your remote device and <IP_address> with the IP address of the remote device on your network).  By default, I am prompted to enter the password for the account that is being used to log into RP2.
+In order to establish the remote connection, I hop in to the Terminal of RP1 and enter ```ssh <user_name>@<IP_address>``` (you will replace ```<user_name>``` with the account you have on your remote device and ```<IP_address>``` with the IP address of the remote device on your network).  By default, I am prompted to enter the password for the account that is being used to log into RP2.
 
 ### Configuring SSH Keys to Login Without a Password
 My file-syncing plan is going to require frequent remote communication between RP1 and RP2.  I do not want to worry about having to enter a password every time this SSH connection is made.  In this step, I will be configuring SSH keys to provide authentication in lieu of a password.
@@ -19,7 +19,7 @@ SSH keys consist of a pair of public/private keys.  Conceptually, the public key
 
 To generate the key pair, I typed ```ssh-keygen``` into the Terminal of RP1.  The key-generation process requires a location to store the pair, and it will default to ```/home/pi/.ssh/id_rsa``` unless another path is specified.  There will also be a prompt to enter a passphrase (this step can be bypassed by pressing 'ENTER').  When completed, the system will show you the path where the public key has been saved and a random image that represents the key's fingerprint.
 
-After the keys are created, the public key must be shared with the remote host (RP2).  While still in RP1's Terminal, I typed ```ssh-copy-id <user_name>@<IP_address>``` (again, replacing <user_name> and <IP_address> with the appropriate values for RP2).  This should prompt for the user password for the remote host.  Once entered, the SSH key pair should be configured between RP1 and RP2.
+After the keys are created, the public key must be shared with the remote host (RP2).  While still in RP1's Terminal, I typed ```ssh-copy-id <user_name>@<IP_address>``` (again, replacing ```<user_name>``` and ```<IP_address>``` with the appropriate values for RP2).  This should prompt for the user password for the remote host.  Once entered, the SSH key pair should be configured between RP1 and RP2.
 
 ### File Synchornization with Rsync
 For my hands-off file management strategy to work, I employed Rsync.  Rsync is a tool that can be used to copy files in Linux.  The files can be copied locally or rsync can push/pull files between local and remote hosts.
