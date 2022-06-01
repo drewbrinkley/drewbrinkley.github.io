@@ -9,17 +9,20 @@ IT Support is one of the Google Career Certificate programs designed to provide 
 
 ## CompTIA A+
 The Computing Technology Industry Association (CompTIA) is a vendor-neutral, independent organization that provides education, training, and certification in the field of technology.  They offer four "core" certifications, one of which is called CompTIA A+.  This is well-regarded entry-level IT certification that focuses on technology fundamentals.  It is intended to prepare someone for roles such as help desk, IT support, PC repair, and junior systems administration.  The A+ certification focuses on 8 core competencies, which are referred to as domains, and is broken down into two examinations:
+
 _Core 1_
 1. Mobile Devices
 2. Networking
 3. Hardware
 4. Virtualization and Cloud Computing
 5. Hardware and Network Troubleshooting
+
 _Core 2_
 1. Operating Systems
 2. Security
 3. Software Troubleshooting
 4. Operational Procedures
+
 Both examinations must be passed in order to obtain the A+ certification.
 
 ## Benefits of Certification
@@ -45,6 +48,7 @@ I am utilizing a variety of sources to prepare myself for the A+ examinations.  
 - [Professor Messer](https://www.professormesser.com/) - utilized free resources like videos and quizzes and paid options to include study guides and practice exams
 - David L. Prowse's [Exam Cram  A+ book](https://www.pearson.com/store/p/comptia-a-practice-questions-exam-cram-core-1-220-1001-and-core-2-220-1002-/P100002534843/9780135566268)
 - free online practice tests from [Exam Compass](https://www.examcompass.com/comptia/a-plus-certification/free-a-plus-practice-tests)
+
 These study methods helped me pass the Core 1 exam last week, and I am well underway in my preparation to tackle Core 2.
 
 ## Is it worth it?
