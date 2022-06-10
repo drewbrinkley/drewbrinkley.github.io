@@ -25,4 +25,5 @@ While you are here, please check out my resume and portfolio.  You can also see 
 | December      | [_Case Study:_](https://github.com/drewbrinkley/CaseStudy-CyclisticBikeShare) Finding trends in bike share ridership |
 | **2022** |  |
 | March | ![Badge](/images/google-it-support-certificate.png) **Earned Professional Certificate** - Google IT Support |
+| June  | ![A+ Badge](/images/comptia-a-ce-certification.1.png) **Obtained Certification** - CompTIA A+  |
 
