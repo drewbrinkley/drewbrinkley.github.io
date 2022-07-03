@@ -29,6 +29,7 @@ When I'm not working, I enjoy spending time with my wife, playing fetch with my 
 While you are here, please feel free check out my resume and portfolio.  You can also see some of my recent accomplishments below.
 
 #### IT Accomplishments
+
 |		|		|
 | :-----: | :----- |
 | **2021**  | ![Certificate](/images/professional-certificate.png) **Earned Professional Certificate** - Google Data Analytics |
