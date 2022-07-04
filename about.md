@@ -7,7 +7,7 @@ title: About
 ### Hi, I'm Drew.
 
 #### My Background
-I spent the 19 years working in the public sector at the state and local government levels.  A relocation from Arkansas to the Philadelphia last year area brought about an opportunity to reflect upon my career.  I was looking for a new challenge, and the time seemed right to make a transition.
+I spent the 19 years working in the public sector at the state and local government levels.  A relocation from Arkansas to the Philadelphia area last year area brought about an opportunity to reflect upon my career.  I was looking for a new challenge, and the time seemed right to make a transition.
 
 I love solving problems.  Each new problem brings its own set of challenges, and I enjoy thinking critically and strategically to analyze the problem and identify solutions.  I appreciate that each problem is unique and provides an opportunity to learn something new.  It was also important to me that whatever position I ended up in had a service component that allowed me to help others in some capacity.
 
