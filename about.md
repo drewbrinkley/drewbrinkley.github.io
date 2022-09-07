@@ -37,4 +37,4 @@ While you are here, please feel free check out my resume and portfolio.  You can
 | **2022** |  |
 | March | ![Badge](/images/google-it-support-certificate.png) **Earned Professional Certificate** - Google IT Support |
 | June  | ![A+ Badge](/images/comptia-a-ce-certification.1.png) **Obtained Certification** - CompTIA A+  |
-| September | [Python](/images/python-logo-png) **Completed Specialization** - Python for Everybody |
+| September | [Python](/images/python-logo.png) **Completed Specialization** - Python for Everybody |
